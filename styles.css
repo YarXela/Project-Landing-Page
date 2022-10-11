@@ -97,7 +97,6 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 55px;
 }
 
 .shopping h2 {
@@ -116,6 +115,7 @@ header {
   height: 150px;
   border-radius: 4px;
   border: 0.5px solid rgb(152, 125, 85);
+  margin-top: 45px;
 }
 
 .shopping-links p {
@@ -126,11 +126,76 @@ header {
 .quote {
   height: 350px;
   background-color: #E5E7EB;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.quote p {
+.quote p:first-child {
   font-size: 2.25rem;
   font-style: italic;
   color: #1F2937;;
   font-weight: 100;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.quote p:last-child {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+
+.signup {
+  height: 275px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-banner {
+  height: 45%;
+  background-color: #3882F6;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 5px;
+}
+
+.signup-banner .left-side {
+  display: flex;
+  flex-direction: column;
+  color: #F9FAF8;
+}
+
+.signup-banner .left-side p {
+  color: #E5E7EB;
+  font-weight: lighter;
+}
+
+.signup-banner button {
+  border: 2px solid #F9FAF8;
+  color: #F9FAF8;
+  background-color: #3882F6;
+  border-radius: 10px;
+  padding: 5px 35px;
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+
+footer {
+  background-color: #1F2937;
+}
+
+.footer {
+  display: flex;
+  height: 75px;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer p {
+  color: #E5E7EB;
+  font-size: 0.8rem;
 }
