@@ -9,7 +9,7 @@ body {
 }
 
 nav {
-  background-color: #1F2937;
+  background-color: #263243;
   padding: 8px;
 }
 
@@ -26,10 +26,11 @@ nav {
   align-items: center;
 }
 
-.header-logo {
+.header-logo a {
   font-size: 1.5rem;
-  color: #F9FAF8;
   font-weight: 700;
+  text-decoration: none;
+  color: #F9FAF8;
 }
 
 .navbar ul {
@@ -42,6 +43,10 @@ nav {
   font-size: 1.125rem;
   text-decoration: none;
   color: #E5E7EB;
+}
+
+.navbar li a:hover {
+  color: rgb(16, 89, 16);
 }
 
 header {
@@ -84,11 +89,18 @@ header {
   border: none;
   font-weight: 500;
   font-size: 1.125rem;
+  cursor: pointer;
+}
+
+.hero-content button:hover {
+  background-color: #F9FAF8;
+  color: #3882F6;
 }
 
 .hero img {
   max-width: 500px;
   height: auto;
+  border-radius: 5px;
 }
 
 .shopping {
@@ -110,17 +122,23 @@ header {
   gap: 35px;
 }
 
+.image-item:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
 .shopping-links img {
   max-width: 225px;
-  height: 150px;
-  border-radius: 4px;
+  height: 165px;
+  border-radius: 5px;
   border: 0.5px solid rgb(152, 125, 85);
   margin-top: 45px;
 }
 
 .shopping-links p {
   text-align: center;
-  font-size: 1.125rem;
+  font-size: 1.3rem;
+  margin-top: 8px;
 }
 
 .quote {
@@ -131,19 +149,22 @@ header {
   justify-content: center;
 }
 
+.quote p {
+  max-width: 1050px;
+}
+
 .quote p:first-child {
   font-size: 2.25rem;
   font-style: italic;
-  color: #1F2937;;
+  color: #1F2937;
   font-weight: 100;
-  max-width: 1050px;
   margin: 0 auto;
 }
 
 .quote p:last-child {
   font-size: 1.5rem;
   font-weight: 700;
-  margin-top: 1rem;
+  text-align: end;
 }
 
 .signup {
@@ -182,6 +203,12 @@ header {
   padding: 5px 35px;
   font-weight: 500;
   font-size: 1.125rem;
+}
+
+.signup-banner button:hover {
+  background-color: #F9FAF8;
+  color: #3882F6;
+  cursor: pointer;
 }
 
 footer {
